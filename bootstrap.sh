@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Default for tim/conductor development.  This if block will be 
+# once tim-stable is merged into conductor/master.
+if [ "x$FACTER_CONDUCTOR_BRANCH" = "x" ]; then
+  export FACTER_CONDUCTOR_BRANCH=tim-stable-rebased
+fi
+
 # Set this to 0 if you don't have (or don't want to use) sudo permissions
 if [ "x$HAVESUDO" = "x" ]; then
   HAVESUDO=1
