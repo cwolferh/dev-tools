@@ -40,4 +40,4 @@ export FACTER_DELTACLOUD_URL=http://localhost:3002/api
 
 ### END DIRECTORY AND PORT DEFINITIONS
 
-curl https://raw.github.com/aeolus-incubator/dev-tools/$DEV_TOOLS_BRANCH/bootstrap.sh | /bin/bash -x 2>&1 | tee -a /tmp/bootstrap-$DEV_TOOLS_BRANCH.out
+curl https://raw.github.com/aeolus-incubator/dev-tools/$DEV_TOOLS_BRANCH/bootstrap.sh | /bin/bash 2>&1 | tee -a /tmp/bootstrap-$DEV_TOOLS_BRANCH.out
